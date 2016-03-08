@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ActionView::Helpers::FormHelper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ActionView::Helpers::FormHelper</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/app/helpers/model_security_helper_rb.html">
+                app/helpers/model_security_helper.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+Overload the form helper functions to understand <a
+href="../../ModelSecurity.html">ModelSecurity</a> and act upon the
+permissions that <a href="../../ModelSecurity.html">ModelSecurity</a>
+encodes. If a model attribute does not have a read permission in the
+current context, its data won&#8216;t be displayed, or read at all, and
+thus the helpers won&#8216;t trigger a <a
+href="../../ModelSecurity.html">ModelSecurity</a> exception. If
+there&#8216;s no write permission on the datum, you&#8216;ll display static
+data instead of an edit field. Write-only attributes work too. And all of
+this works on scaffolds.
+</p>
+<p>
+The methods overriden here are:
+</p>
+<ul>
+<li>check_box
+
+</li>
+<li>file_field
+
+</li>
+<li>hidden_field
+
+</li>
+<li>password_field
+
+</li>
+<li>radio_button
+
+</li>
+<li>text_area
+
+</li>
+<li>text_field
+
+</li>
+</ul>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+    <div id="aliases-list">
+      <h3 class="section-bar">External Aliases</h3>
+
+      <div class="name-list">
+                        <table summary="aliases">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">check_box</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">old_check_box</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">radio_button</td>
+          <td>-&gt;</td>
+          <td class="context-item-value">old_radio_button</td>
+        </tr>
+                        </table>
+      </div>
+    </div>
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
